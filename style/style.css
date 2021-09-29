@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+  width: 100%;
+  max-width: 1220px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  min-height: 100%;
+}
+
+/* HEADER - START */
+.header {
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), color-stop(20.31%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, left bottom, color-stop(78.42%, rgba(248, 251, 255, 0)), color-stop(86.55%, rgba(248, 251, 255, 0.62)), color-stop(94.52%, rgba(248, 251, 255, 0.94)), to(#f8fbff)), url(../images/header_bg.png);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 20.31%), linear-gradient(180deg, rgba(248, 251, 255, 0) 78.42%, rgba(248, 251, 255, 0.62) 86.55%, rgba(248, 251, 255, 0.94) 94.52%, #f8fbff 100%), url(../images/header_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header__menu {
+  padding-top: 20px;
+}
+
+.header__menu .menu__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__menu .menu__row .menu__logo .logo__text {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 121%;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.header__menu .menu__row .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+}
+
+.header__menu .menu__row .nav__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.header__menu .menu__row .nav__link {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 121%;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+.header__menu .menu__row .nav__link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  top: 100%;
+  left: 0;
+  pointer-events: none;
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+  -webkit-transform: scale3d(0, 1, 1);
+          transform: scale3d(0, 1, 1);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.header__menu .menu__row .nav__link:hover {
+  color: #fff;
+}
+
+.header__menu .menu__row .nav__link:hover::before {
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+
+.header__main {
+  height: calc(100vh - 50px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+/* HEADER - END */
+/*# sourceMappingURL=style.css.map */

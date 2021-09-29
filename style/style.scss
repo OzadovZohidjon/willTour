@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import "./mixins/mixins";
+@import "./mixins/normalize";
+
+$font-montserrat: "Montserrat", sans-serif;
+$font-roboto: "Roboto", sans-serif;
+
+$main-text-color: #000;
+$primary-text-color: #fff;
+$bg-color: #121212;
+
+body {
+	font-family: $font-montserrat;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.container {
+	width: 100%;
+	max-width: 1220px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	min-height: 100%;
+}
+
+/* HEADER - START */
+
+.header {
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(
+			180deg,
+			rgba(0, 0, 0, 0.2) 0%,
+			rgba(0, 0, 0, 0) 20.31%
+		),
+		linear-gradient(
+			180deg,
+			rgba(248, 251, 255, 0) 78.42%,
+			rgba(248, 251, 255, 0.62) 86.55%,
+			rgba(248, 251, 255, 0.94) 94.52%,
+			#f8fbff 100%
+		),
+		url(../images/header_bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	&__menu {
+		padding-top: 20px;
+
+		.menu__row {
+			@include d-flex(center, space-between);
+
+			.menu__logo {
+				.logo__text {
+					font-family: $font-montserrat;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 24px;
+					line-height: 121%;
+					text-transform: capitalize;
+					color: $primary-text-color;
+				}
+			}
+
+			.nav {
+				@include d-flex(center, none);
+
+				&__item {
+					&:not(:last-child) {
+						margin-right: 30px;
+					}
+				}
+
+				&__link {
+					position: relative;
+					font-family: $font-roboto;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 18px;
+					line-height: 121%;
+					text-transform: capitalize;
+					color: rgba(255, 255, 255, 0.75);
+					transition: color 0.3s ease-out;
+
+					&::before {
+						content: "";
+						position: absolute;
+						width: 100%;
+						height: 1px;
+						background: $primary-text-color;
+						top: 100%;
+						left: 0;
+						pointer-events: none;
+						transform-origin: 100% 50%;
+						transform: scale3d(0, 1, 1);
+						transition: transform 0.3s;
+					}
+
+					&:hover {
+						color: $primary-text-color;
+
+						&::before {
+							transform-origin: 0% 50%;
+							transform: scale3d(1, 1, 1);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&__main {
+		height: calc(100vh - 50px);
+		@include d-flex(center, flex-start);
+	}
+}
+
+/* HEADER - END */
