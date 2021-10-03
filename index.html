@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/slick.css">
+    <link rel="stylesheet" href="./style/slick-theme.css">
     <link rel="stylesheet" href="./style/style.css">
     <title>Appx</title>
 </head>
@@ -43,6 +45,12 @@
                         <div class="menu__btns">
                             <button>русский </button>
                         </div>
+
+                        <div class="menu__mobile-btn">
+                            <button>
+                                <ion-icon name="menu-outline"></ion-icon>
+                            </button>
+                        </div>
                     </div>
                 </div>
 
@@ -64,25 +72,9 @@
                         </div>
 
                         <div class="main__filter">
-                            <!-- <form>
-                                <div class="form__row">
-                                    <div class="form__group">
-                                        <input type="text" class="form__group-input" placeholder="Откуда">
-                                    </div>
-                                    <div class="form__group">
-                                        <input type="text" class="form__group-input" placeholder="куда">
-                                    </div>
-                                    <div class="form__group">
-                                        <input type="date" class="form__group-input" placeholder="когда">
-                                    </div>
-                                    <div class="form__group">
-                                        <input type="submit" class="form__group-input" placeholder="обратно">
-                                    </div>
-                                    <div class="form__group">
-                                        <input type="submit" class="form__group-input" placeholder="обратно">
-                                    </div>
-                                </div>
-                            </form> -->
+                            <!-- <iframe scrolling="no" width="" height="245" frameborder="0"
+                                src="//www.travelpayouts.com/widgets/8501a0318e71ffe794d86ac40bcddefe.html?v=2216"
+                                class="myiFrame"></iframe> -->
                         </div>
                     </div>
                 </div>
@@ -95,6 +87,8 @@
 
         <main class="pages">
 
+            <!-- ABOUT - SECTION - START -->
+
             <section class="about__section section">
                 <div class="container">
                     <div class="section__row">
@@ -104,20 +98,279 @@
                             </div>
                         </div>
 
-                        <div class="section__content">
+                        <div class="section__content ">
                             <div class="content__title">
                                 <h1>О компании</h1>
                             </div>
 
                             <div class="content__desc">
-                                <p>Агентство ООО«Рохат Трэвел» занимается реализацией авиа и железнодорожных билетов по всему миру. Компания работает в этой сфере с 2010 года, имеет филиалы в Петербурге, хотя зарегистрирована новым брендом 31 октября 2017 года. </p>
-
-                                <p>На сегодняшний день, здесь представлен богатый выбор рейсов от известных и надежных авиаперевозчиков, а также время от времени обновляются стоимость авиабилетов на самые популярные направления, поэтому всегда есть возможность сэкономить на дорожных расходах.</p>
+                                <p>Агентство ООО«Рохат Трэвел» занимается реализацией авиа и железнодорожных билетов по
+                                    всему миру. Компания работает в этой сфере с 2010 года, имеет филиалы в Петербурге,
+                                    хотя зарегистрирована новым брендом 31 октября 2017 года. </p>
+                                <p>На сегодняшний день, здесь представлен богатый выбор рейсов от известных и надежных
+                                    авиаперевозчиков, а также время от времени обновляются стоимость авиабилетов на
+                                    самые популярные направления, поэтому всегда есть возможность сэкономить на дорожных
+                                    расходах.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <!-- ABOUT - SECTION - END -->
+
+            <!-- OFFER - SECTION - START -->
+
+
+            <section class="offer__section section">
+                <div class="container">
+                    <div class="section__content">
+                        <div class="content__title">
+                            <h1>Специальные предложения</h1>
+                        </div>
+                    </div>
+
+                    <div class="section__cards">
+                        <div class="offer__card">
+                            <div class="card__img">
+                                <div class="img__wrap">
+                                    <img src="./images/offer_card-img-1.png" alt="offer_card-img-1">
+                                </div>
+                            </div>
+
+                            <div class="card__title">
+                                <h1>Увеличение нормы бесплатного провоза багажа</h1>
+                            </div>
+
+                            <div class="card__desc">
+                                <p>Ташкент-Санкт- Петербург</p>
+                            </div>
+
+                            <div class="card__icon">
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </div>
+                        </div>
+
+                        <div class="offer__card">
+                            <div class="card__img">
+                                <div class="img__wrap">
+                                    <img src="./images/offer_card-img-2.png" alt="offer_card-img-2">
+                                </div>
+                            </div>
+
+                            <div class="card__title">
+                                <h1>UZBEKISTAN <br /> AIRWAYS</h1>
+                            </div>
+
+                            <div class="card__desc">
+                                <p>Тбилиси-Ташкент</p>
+                            </div>
+
+                            <div class="card__icon">
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </div>
+                        </div>
+
+                        <div class="offer__card">
+                            <div class="card__img">
+                                <div class="img__wrap">
+                                    <img src="./images/offer_card-img-3.png" alt="offer_card-img-3">
+                                </div>
+                            </div>
+
+                            <div class="card__title">
+                                <h1>UZBEKISTAN <br /> AIRWAYS</h1>
+                            </div>
+
+                            <div class="card__desc">
+                                <p>Рейсы внутри Республики Узбекистан</p>
+                            </div>
+
+                            <div class="card__icon">
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- OFFER - SECTION - END -->
+
+            <!-- FORM - SECTION - START -->
+
+            <section class="form_section section">
+                <div class="container">
+                    <div class="section__body">
+                        <div class="section__row">
+                            <div class="section__content">
+                                <div class="content__title">
+                                    <h1>Хочешь узнавать об акциях первым?</h1>
+                                </div>
+                            </div>
+
+                            <div class="section__form">
+                                <form>
+                                    <div class="form__group">
+                                        <input type="text" placeholder="Имя">
+                                    </div>
+                                    <div class="form__group">
+                                        <input type="email" placeholder="Email">
+                                        <button>
+                                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FORM - SECTION - END -->
+
+            <!-- GALLERY - SECTION - START -->
+
+            <div class="gallery__section section">
+                <div class="container">
+                    <div class="section__body">
+                        <div class="section__content">
+                            <div class="section__row">
+                                <div class="content__title">
+                                    <h1>Фотогалерея</h1>
+                                </div>
+
+                                <div class="content__link">
+                                    <a href="#">
+                                        <span class="link__text">Все новости</span>
+                                        <span class="link__icon">
+                                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section__slider">
+                            <div class="gallery__slider">
+                                <div class="slider__item">
+                                    <div class="slider__img">
+                                        <div class="img__wrap">
+                                            <img src="./images/gallery_1.png" alt="gallery_1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider__img">
+                                        <div class="img__wrap">
+                                            <img src="./images/gallery_2.png" alt="gallery_2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider__img">
+                                        <div class="img__wrap">
+                                            <img src="./images/gallery_3.png" alt="gallery_3">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider__img">
+                                        <div class="img__wrap">
+                                            <img src="./images/gallery_2.png" alt="gallery_2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider__img">
+                                        <div class="img__wrap">
+                                            <img src="./images/gallery_3.png" alt="gallery_3">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slider__arrows">
+                                <div class="slider__arrow arrow__prev gallery__slider-arrow__prev ">
+                                    <ion-icon name="chevron-back-outline"></ion-icon>
+                                </div>
+                                <div class="slider__arrow arrow__next gallery__slider-arrow__next">
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GALLERY - SECTION - END -->
+
+            <!-- PARTNERS - SECTION - START -->
+
+            <div class="partners__section section">
+                <div class="container">
+                    <div class="section__body">
+                        <div class="section__slider">
+                            <div class="partners__slider">
+                                <div class="slider__item">
+                                    <div class="item__img">
+                                        <div class="img__wrap">
+                                            <img src="./images/parners_1.png" alt="parners_1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="item__img">
+                                        <div class="img__wrap">
+                                            <img src="./images/parners_2.png" alt="parners_2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="item__img">
+                                        <div class="img__wrap">
+                                            <img src="./images/parners_3.png" alt="parners_3">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="item__img">
+                                        <div class="img__wrap">
+                                            <img src="./images/parners_4.png" alt="parners_4">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="item__img">
+                                        <div class="img__wrap">
+                                            <img src="./images/parners_3.png" alt="parners_3">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="item__img">
+                                        <div class="img__wrap">
+                                            <img src="./images/parners_4.png" alt="parners_4">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slider__arrows">
+                                <div class="slider__arrow arrow__prev partners__slider-arrow__prev">
+                                    <ion-icon name="chevron-back-outline"></ion-icon>
+                                </div>
+
+                                <div class="slider__arrow arrow__next partners__slider-arrow__next">
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PARTNERS - SECTION - END -->
+
 
         </main>
 
@@ -126,12 +379,173 @@
         <!-- FOOTER - START -->
 
         <footer class="footer">
+            <div class="container">
+                <div class="footer__body">
+                    <div class="body__row">
+                        <div class="footer__column">
+                            <div class="column__title">
+                                <h3>Направления</h3>
+                            </div>
 
+                            <div class="column__content">
+                                <ul class="footer__nav">
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">О компании</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">Корпоративным клиентам</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">Контакты</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">Помощь</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">Правила</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">Политика конфиденциальности</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="footer__column">
+                            <div class="column__content address__content">
+                                <div class="content__item">
+                                    <p>Ст. м. “Фрунзенская”, Московский пр., 63
+
+                                    </p>
+                                </div>
+                                <div class="content__item">
+                                    <p>ст. м.Беговая, ул. Савушкина, 124 к.1</p>
+                                </div>
+                                <div class="content__item">
+                                    <p> просп. Большевиков, 18, Санкт-Петербург (ТРК Невский, корпус 1, 1 этаж) Ст. м.
+                                        "Улица Дыбенко"</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footer__column">
+                            <div class="column__content">
+                                <div class="icons__list">
+                                    <a href="#" class="list__item">
+                                        <span class="list__icon">
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0)">
+                                                    <path
+                                                        d="M0.30027 8.19655L4.21741 9.65855L5.73358 14.5345C5.8306 14.8468 6.21247 14.9623 6.46594 14.755L8.64942 12.975C8.8783 12.7885 9.2043 12.7792 9.44349 12.9529L13.3817 15.8121C13.6529 16.0092 14.037 15.8606 14.105 15.533L16.99 1.6558C17.0642 1.29789 16.7125 0.999318 16.3717 1.13112L0.29568 7.33278C-0.101043 7.48578 -0.0975865 8.04746 0.30027 8.19655ZM5.48924 8.88029L13.1448 4.16523C13.2824 4.08074 13.4239 4.26678 13.3058 4.37637L6.98773 10.2493C6.76565 10.456 6.6224 10.7327 6.58183 11.0329L6.36661 12.6279C6.3381 12.8408 6.03896 12.862 5.9802 12.6559L5.15247 9.74746C5.05766 9.41574 5.19582 9.0614 5.48924 8.88029Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0">
+                                                        <rect width="17" height="17" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+
+                                        </span>
+                                        <span class="list__text">Telegram</span>
+                                    </a>
+                                    <a href="#" class="list__item">
+                                        <span class="list__icon">
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0)">
+                                                    <path
+                                                        d="M16.9833 4.99805C16.9435 4.09477 16.7974 3.47378 16.5881 2.93568C16.3723 2.3645 16.0402 1.85312 15.6051 1.42801C15.18 0.996288 14.6652 0.660819 14.1007 0.44833C13.5595 0.239083 12.9417 0.0930128 12.0384 0.0531873C11.1284 0.00998882 10.8395 0 8.53144 0C6.22338 0 5.93448 0.00998882 5.02783 0.0498144C4.12456 0.08964 3.50356 0.23584 2.96559 0.444957C2.39428 0.660819 1.88291 0.992916 1.4578 1.42801C1.02607 1.85312 0.690734 2.36787 0.478115 2.93243C0.268868 3.47378 0.122798 4.0914 0.0829724 4.99467C0.039774 5.90469 0.0297852 6.19359 0.0297852 8.50166C0.0297852 10.8097 0.039774 11.0986 0.0795996 12.0053C0.119425 12.9085 0.265625 13.5295 0.474872 14.0676C0.690734 14.6388 1.02607 15.1502 1.4578 15.5753C1.88291 16.007 2.39766 16.3425 2.96222 16.555C3.50356 16.7642 4.12118 16.9103 5.02459 16.9501C5.93111 16.9901 6.22013 16.9999 8.5282 16.9999C10.8363 16.9999 11.1252 16.9901 12.0318 16.9501C12.9351 16.9103 13.5561 16.7642 14.0941 16.555C15.2365 16.1133 16.1398 15.21 16.5815 14.0676C16.7906 13.5263 16.9368 12.9085 16.9767 12.0053C17.0165 11.0986 17.0265 10.8097 17.0265 8.50166C17.0265 6.19359 17.0231 5.90469 16.9833 4.99805ZM15.4524 11.9389C15.4158 12.7691 15.2764 13.2174 15.1601 13.5163C14.8745 14.2569 14.2867 14.8447 13.5461 15.1304C13.2472 15.2466 12.7956 15.386 11.9686 15.4225C11.072 15.4624 10.8031 15.4723 8.53482 15.4723C6.26657 15.4723 5.99428 15.4624 5.10087 15.4225C4.27063 15.386 3.8223 15.2466 3.52341 15.1304C3.15486 14.9941 2.81939 14.7783 2.5471 14.496C2.26482 14.2203 2.04895 13.8882 1.91274 13.5197C1.79651 13.2208 1.65706 12.7691 1.6206 11.9422C1.58065 11.0456 1.57079 10.7765 1.57079 8.50828C1.57079 6.24003 1.58065 5.96774 1.6206 5.07445C1.65706 4.24421 1.79651 3.79588 1.91274 3.497C2.04895 3.12832 2.26482 2.79298 2.55047 2.52056C2.82601 2.23828 3.1581 2.02241 3.52678 1.88633C3.82567 1.7701 4.27737 1.63064 5.10424 1.59406C6.0009 1.55424 6.26995 1.54425 8.53806 1.54425C10.8097 1.54425 11.0786 1.55424 11.972 1.59406C12.8023 1.63064 13.2506 1.7701 13.5495 1.88633C13.918 2.02241 14.2535 2.23828 14.5258 2.52056C14.8081 2.79622 15.0239 3.12832 15.1601 3.497C15.2764 3.79588 15.4158 4.24746 15.4524 5.07445C15.4922 5.97111 15.5022 6.24003 15.5022 8.50828C15.5022 10.7765 15.4922 11.0422 15.4524 11.9389Z"
+                                                        fill="white" />
+                                                    <rect x="1" y="1" width="15" height="15" rx="4" fill="white" />
+                                                    <path
+                                                        d="M8.53137 4.13477C6.12043 4.13477 4.16431 6.09076 4.16431 8.50183C4.16431 10.9129 6.12043 12.8689 8.53137 12.8689C10.9424 12.8689 12.8984 10.9129 12.8984 8.50183C12.8984 6.09076 10.9424 4.13477 8.53137 4.13477ZM8.53137 11.3346C6.96728 11.3346 5.69857 10.0661 5.69857 8.50183C5.69857 6.9376 6.96728 5.66902 8.53137 5.66902C10.0956 5.66902 11.3642 6.9376 11.3642 8.50183C11.3642 10.0661 10.0956 11.3346 8.53137 11.3346Z"
+                                                        fill="black" />
+                                                    <path
+                                                        d="M14.0909 3.96189C14.0909 4.5249 13.6344 4.9814 13.0713 4.9814C12.5083 4.9814 12.0518 4.5249 12.0518 3.96189C12.0518 3.39876 12.5083 2.94238 13.0713 2.94238C13.6344 2.94238 14.0909 3.39876 14.0909 3.96189Z"
+                                                        fill="black" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0">
+                                                        <rect width="17" height="17" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+
+                                        </span>
+                                        <span class="list__text">Instagram</span>
+                                    </a>
+                                    <a href="#" class="list__item">
+                                        <span class="list__icon">
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M17 8.5C17 3.80508 13.1949 0 8.5 0C3.80508 0 0 3.80508 0 8.5C0 13.1949 3.80508 17 8.5 17C8.5498 17 8.59961 17 8.64941 16.9967V10.3826H6.82324V8.2543H8.64941V6.68711C8.64941 4.8709 9.7584 3.88145 11.3787 3.88145C12.1557 3.88145 12.823 3.93789 13.0156 3.96445V5.86367H11.9C11.0201 5.86367 10.8475 6.28203 10.8475 6.89629V8.25098H12.9559L12.6803 10.3793H10.8475V16.6713C14.4002 15.652 17 12.3814 17 8.5Z"
+                                                    fill="white" />
+                                            </svg>
+
+                                        </span>
+                                        <span class="list__text">Facebook</span>
+                                    </a>
+                                    <a href="#" class="list__item">
+                                        <span class="list__icon">
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0)">
+                                                    <path
+                                                        d="M15.0731 7.7053C15.3148 7.39279 15.5068 7.14204 15.6485 6.95286C16.6693 5.5957 17.1117 4.72873 16.9761 4.35075L16.9229 4.26223C16.8876 4.20906 16.7959 4.16023 16.6486 4.11603C16.501 4.07187 16.3122 4.06481 16.0822 4.09397L13.5331 4.11195C13.4741 4.10607 13.415 4.10744 13.356 4.11603C13.297 4.12501 13.2587 4.13401 13.2409 4.1426C13.2231 4.15161 13.2084 4.15883 13.1967 4.1647L13.1614 4.19127C13.1319 4.20887 13.0994 4.23994 13.0641 4.28433C13.0286 4.32869 12.9989 4.3801 12.9755 4.43931C12.6982 5.15324 12.3825 5.81716 12.0284 6.43085C11.8101 6.79673 11.6094 7.11413 11.4267 7.38225C11.2437 7.65098 11.0903 7.84859 10.9664 7.97521C10.8425 8.10206 10.7303 8.20406 10.6301 8.28051C10.5296 8.3575 10.453 8.38976 10.4 8.37804C10.3468 8.36632 10.2966 8.3546 10.2495 8.34246C10.1669 8.28952 10.1004 8.21738 10.0504 8.12572C10.0002 8.03449 9.96636 7.91933 9.94854 7.78057C9.93095 7.64201 9.92041 7.52241 9.91766 7.42195C9.91453 7.3217 9.91609 7.1802 9.92216 6.99706C9.92804 6.8141 9.93094 6.69042 9.93094 6.62534C9.93094 6.40135 9.93545 6.15784 9.94429 5.89518C9.95308 5.63271 9.96052 5.42456 9.96636 5.27111C9.97224 5.11789 9.97514 4.95547 9.97514 4.78427C9.97514 4.61345 9.9648 4.47897 9.94401 4.38148C9.92331 4.28433 9.89224 4.18993 9.8512 4.09828C9.80978 4.00701 9.74936 3.93605 9.66962 3.88604C9.58991 3.83581 9.49117 3.79614 9.37317 3.76641C9.06025 3.69545 8.66196 3.65755 8.17824 3.65132C7.08065 3.63998 6.3755 3.71072 6.0628 3.86394C5.93889 3.92903 5.8267 4.01736 5.72646 4.12954C5.62015 4.25952 5.60549 4.33044 5.68229 4.34178C6.03642 4.39495 6.28701 4.52199 6.43455 4.72251L6.48772 4.82863C6.52895 4.90562 6.5702 5.04128 6.61162 5.23592C6.65288 5.43059 6.67945 5.64596 6.69137 5.88205C6.72087 6.31279 6.72087 6.68141 6.69137 6.98846C6.66186 7.29548 6.63391 7.53432 6.60734 7.70514C6.58074 7.87635 6.54089 8.01491 6.48791 8.12103C6.43474 8.22753 6.39939 8.29242 6.3816 8.31605C6.36381 8.33949 6.34915 8.35434 6.33743 8.36025C6.26063 8.38957 6.18108 8.40442 6.09843 8.40442C6.01576 8.40442 5.91548 8.36297 5.79745 8.28029C5.67939 8.19802 5.55685 8.08427 5.4302 7.93964C5.30317 7.79523 5.16029 7.59296 5.00081 7.3332C4.84152 7.07386 4.67616 6.76681 4.50515 6.41287L4.36365 6.15605C4.27513 5.99111 4.15412 5.75052 4.00071 5.43487C3.8473 5.11923 3.71145 4.81397 3.59361 4.51867C3.54631 4.39495 3.47554 4.30055 3.38118 4.23547L3.33701 4.2089C3.3075 4.18543 3.26021 4.16023 3.19532 4.13382C3.13024 4.10725 3.06263 4.08809 2.99167 4.07618L0.566457 4.09378C0.318644 4.09378 0.150572 4.15008 0.062049 4.26223L0.0266654 4.31521C0.00878203 4.34491 0 4.39221 0 4.45691C0 4.52199 0.0177876 4.60154 0.0531712 4.69574C0.407295 5.52793 0.792331 6.33042 1.20822 7.10317C1.62432 7.87634 1.9857 8.49901 2.29253 8.971C2.59935 9.44338 2.91206 9.88858 3.23083 10.3076C3.5496 10.7266 3.76047 10.9949 3.86365 11.1128C3.96683 11.2311 4.04794 11.3196 4.10699 11.3784L4.32823 11.591C4.46973 11.7326 4.67789 11.9022 4.9523 12.1C5.22668 12.2977 5.53041 12.4924 5.86403 12.684C6.19727 12.8759 6.58541 13.032 7.02786 13.1532C7.47035 13.2744 7.90108 13.323 8.3201 13.2992H9.33798C9.54457 13.2816 9.70086 13.2169 9.80704 13.1045L9.84239 13.0603C9.86583 13.0251 9.88812 12.9704 9.90881 12.8967C9.92935 12.8231 9.93995 12.7418 9.93995 12.6534C9.93385 12.3998 9.95324 12.1707 9.9974 11.9674C10.0416 11.7638 10.0918 11.6106 10.1479 11.507C10.204 11.404 10.2673 11.3168 10.3382 11.2459C10.409 11.1749 10.459 11.1325 10.4887 11.1177C10.5182 11.1032 10.5419 11.0928 10.5595 11.0866C10.701 11.0394 10.8677 11.0852 11.0596 11.2238C11.2513 11.3628 11.4314 11.5335 11.5996 11.7372C11.7677 11.9408 11.9697 12.1693 12.2059 12.4232C12.4418 12.6768 12.6483 12.8656 12.8254 12.9895L13.0025 13.0961C13.1205 13.1666 13.2737 13.2315 13.4627 13.2907C13.6515 13.3496 13.8169 13.3644 13.9584 13.3349L16.2243 13.2993C16.4485 13.2993 16.6226 13.2626 16.7465 13.1887C16.8704 13.1154 16.9441 13.0337 16.9678 12.9454C16.9912 12.8569 16.9928 12.757 16.9723 12.6446C16.9516 12.5326 16.9309 12.4544 16.9104 12.4103C16.8897 12.3661 16.8704 12.329 16.8527 12.2997C16.5576 11.7686 15.9941 11.1164 15.1621 10.3435L15.1443 10.3259L15.1355 10.3169L15.1267 10.3083H15.1179C14.7401 9.9483 14.5012 9.70633 14.401 9.58223C14.2181 9.34655 14.1766 9.10752 14.2771 8.86559C14.3474 8.68212 14.6129 8.29555 15.0731 7.7053Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0">
+                                                        <rect width="17" height="17" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+
+                                        </span>
+                                        <span class="list__text">Vkontakte</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footer__column">
+                            <div class="column__title">
+                                <h3>доступный </h3>
+                            </div>
+
+                            <div class="column__btns">
+                                <a href="#" class="column__btn">
+                                    <span class="btn__icon">
+                                        <img src="./images/gplay_icon.png" alt="gplay_icon">
+                                    </span>
+                                    <span class="btn__text">Google Play</span>
+                                </a>
+                                <a href="#" class="column__btn">
+                                    <span class="btn__icon">
+                                        <img src="./images/astore__icon.png" alt="astore__icon">
+                                    </span>
+                                    <span class="btn__text">App Store</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
 
         <!-- FOOTER - END -->
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
