@@ -690,16 +690,19 @@ body {
 		flex-wrap: wrap;
 		@media screen and (max-width: 568px) {
 			flex-direction: column;
+			align-items: center;
 			text-align: center;
 		}
 	}
 
 	.footer__column {
-		max-width: 300px;
 		width: 100%;
+
+		@media screen and (min-width: 769px) {
+			max-width: 300px;
+		}
 		@media screen and (max-width: 768px) {
 			margin-bottom: 30px;
-
 			&:nth-child(1) {
 				order: 2;
 				text-align: center;
@@ -767,9 +770,20 @@ body {
 		.icons__list {
 			display: flex;
 			flex-direction: column;
+			@media screen and (max-width: 568px) {
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
 			.list__item {
 				&:not(:last-child) {
 					margin-bottom: 25px;
+				}
+
+				@media screen and (max-width: 568px) {
+					width: 48%;
+					&:last-child {
+						margin-bottom: 25px;
+					}
 				}
 				@include d-flex(center, center);
 				.list__icon {
