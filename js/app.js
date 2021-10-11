@@ -9,20 +9,25 @@ $('.gallery__slider').slick({
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
+                dots: true
             }
         },
         {
             breakpoint: 768,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                dots: true
+
             }
         },
         {
             breakpoint: 568,
             settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                dots: true
+
             }
         }
     ]
@@ -39,20 +44,26 @@ $('.partners__slider').slick({
             settings: {
                 slidesToShow: 4,
                 slidesToScroll: 1,
+                dots: true
+
             }
         },
         {
             breakpoint: 768,
             settings: {
                 slidesToShow: 3,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                dots: true
+
             }
         },
         {
             breakpoint: 568,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                dots: true
+
             }
         }
     ]

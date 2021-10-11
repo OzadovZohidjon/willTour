@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/slick.css">
-    <link rel="stylesheet" href="./style/slick-theme.css">
     <link rel="stylesheet" href="./style/style.css">
-    <title>Will Tour</title>
+    <title>Document</title>
 </head>
 
 <body>
@@ -17,18 +15,18 @@
 
         <!-- HEADER - START -->
 
-        <header class="header">
+        <div class="news__header">
             <div class="container">
                 <div class="header__menu">
                     <div class="menu__row">
-                        <a href="#" class="menu__logo">
+                        <a href="index.html" class="menu__logo">
                             <span class="logo__text">Will Tour</span>
                         </a>
 
                         <div class="menu__navbar">
                             <ul class="nav">
                                 <li class="nav__item">
-                                    <a href="news.html" class="nav__link">Новости</a>
+                                    <a href="#news" class="nav__link">Новости</a>
                                 </li>
                                 <li class="nav__item">
                                     <a href="#news" class="nav__link">Фотогалерея</a>
@@ -53,326 +51,149 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="header__main">
-                    <div class="main__row">
-                        <div class="main__content">
-                            <div class="content__title">
-                                <h1>Санкт-Петербург - <br /> Узбекистан</h1>
-                            </div>
-
-                            <div class="content__row">
-                                <div class="content__link">
-                                    <button>Start Booking</button>
-                                </div>
-                                <div class="content__price">
-                                    <p>от <span>8826</span> руб.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="main__filter">
-                            <iframe scrolling="no" width="" height="245" frameborder="0"
-                                src="//www.travelpayouts.com/widgets/8501a0318e71ffe794d86ac40bcddefe.html?v=2216"
-                                class="myiFrame"
-                                style="min-height: 100px; width: 100%; overflow: auto; margin: 0px; padding: 0px; border: none; background: transparent; height: 470px;"></iframe>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </header>
+        </div>
 
         <!-- HEADER - END -->
+
 
         <!-- MAIN - START -->
 
         <main class="pages">
 
-            <!-- ABOUT - SECTION - START -->
+            <!-- BREADCRUMB - START -->
 
-            <section class="about__section section" id="about">
+            <section class="breadcrumb section">
                 <div class="container">
-                    <div class="section__row">
-                        <div class="section__img">
-                            <div class="img__wrap">
-                                <img src="./images/about_bg.png" alt="about_bg">
-                            </div>
+                    <div class="breadcrumb__body">
+                        <div class="breadcrumb__title">
+                            Новости
                         </div>
-
-                        <div class="section__content ">
-                            <div class="content__title">
-                                <h1>О компании</h1>
-                            </div>
-
-                            <div class="content__desc">
-                                <p>Агентство ООО«Рохат Трэвел» занимается реализацией авиа и железнодорожных билетов по
-                                    всему миру. Компания работает в этой сфере с 2010 года, имеет филиалы в Петербурге,
-                                    хотя зарегистрирована новым брендом 31 октября 2017 года. </p>
-                                <p>На сегодняшний день, здесь представлен богатый выбор рейсов от известных и надежных
-                                    авиаперевозчиков, а также время от времени обновляются стоимость авиабилетов на
-                                    самые популярные направления, поэтому всегда есть возможность сэкономить на дорожных
-                                    расходах.</p>
-                            </div>
+                        <div class="breadcrumb__links">
+                            <a class="breadcrumb__link breadcrumb__link-disabled">
+                                <span>Главная</span>
+                                <span class="breadcrumb__link-icon">
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </span>
+                            </a>
+                            <a href="#" class="breadcrumb__link breadcrumb__link-active">
+                                Новости
+                                <span class="breadcrumb__link-icon">
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- ABOUT - SECTION - END -->
+            <!-- BREADCRUMB - END -->
 
-            <!-- OFFER - SECTION - START -->
+            <!-- NEWS - START -->
 
-
-            <section class="offer__section section" id="offer">
+            <section class="news section">
                 <div class="container">
-                    <div class="section__content">
-                        <div class="content__title">
-                            <h1>Специальные предложения</h1>
-                        </div>
-                    </div>
+                    <div class="news__body">
+                        <div class="news__row">
 
-                    <div class="section__cards">
-                        <div class="offer__card">
-                            <div class="card__img">
-                                <div class="img__wrap">
-                                    <img src="./images/offer_card-img-1.png" alt="offer_card-img-1">
+                            <div class="news__block">
+                                <div class="news__img">
+                                    <img src="./images/news_1.png" alt="">
+                                </div>
+                                <div class="news__date">
+                                    <p>27.09.2021</p>
+                                </div>
+                                <div class="news__title">
+                                    <a href="#">Москва-Узбекистан, сентябрь | Ural Airlines </a>
+                                </div>
+                                <div class="news__desc">
+                                    <p>Открыта продажа на вылеты с 1 до 30 сентября из Москвы в города Узбеки ...</p>
                                 </div>
                             </div>
 
-                            <div class="card__title">
-                                <h1>Увеличение нормы бесплатного провоза багажа</h1>
-                            </div>
-
-                            <div class="card__desc">
-                                <p>Ташкент-Санкт- Петербург</p>
-                            </div>
-
-                            <div class="card__icon">
-                                <ion-icon name="arrow-forward-outline"></ion-icon>
-                            </div>
-                        </div>
-
-                        <div class="offer__card">
-                            <div class="card__img">
-                                <div class="img__wrap">
-                                    <img src="./images/offer_card-img-2.png" alt="offer_card-img-2">
+                            <div class="news__block">
+                                <div class="news__img">
+                                    <img src="./images/news_2.png" alt="">
                                 </div>
-                            </div>
-
-                            <div class="card__title">
-                                <h1>UZBEKISTAN <br /> AIRWAYS</h1>
-                            </div>
-
-                            <div class="card__desc">
-                                <p>Тбилиси-Ташкент</p>
-                            </div>
-
-                            <div class="card__icon">
-                                <ion-icon name="arrow-forward-outline"></ion-icon>
-                            </div>
-                        </div>
-
-                        <div class="offer__card">
-                            <div class="card__img">
-                                <div class="img__wrap">
-                                    <img src="./images/offer_card-img-3.png" alt="offer_card-img-3">
+                                <div class="news__date">
+                                    <p>27.09.2021</p>
                                 </div>
-                            </div>
-
-                            <div class="card__title">
-                                <h1>UZBEKISTAN <br /> AIRWAYS</h1>
-                            </div>
-
-                            <div class="card__desc">
-                                <p>Рейсы внутри Республики Узбекистан</p>
-                            </div>
-
-                            <div class="card__icon">
-                                <ion-icon name="arrow-forward-outline"></ion-icon>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- OFFER - SECTION - END -->
-
-            <!-- FORM - SECTION - START -->
-
-            <section class="form_section section" id="form">
-                <div class="container">
-                    <div class="section__body">
-                        <div class="section__row">
-                            <div class="section__content">
-                                <div class="content__title">
-                                    <h1>Хочешь узнавать об акциях первым?</h1>
-                                </div>
-                            </div>
-
-                            <div class="section__form">
-                                <form>
-                                    <div class="form__group">
-                                        <input type="text" placeholder="Имя">
-                                    </div>
-                                    <div class="form__group">
-                                        <input type="email" placeholder="Email">
-                                        <button>
-                                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- FORM - SECTION - END -->
-
-            <!-- GALLERY - SECTION - START -->
-
-            <section class="gallery__section section" id="news">
-                <div class="container">
-                    <div class="section__body">
-                        <div class="section__content">
-                            <div class="section__row">
-                                <div class="content__title">
-                                    <h1>Фотогалерея</h1>
-                                </div>
-
-                                <div class="content__link">
-                                    <a href="news.html">
-                                        <span class="link__text">Все новости</span>
-                                        <span class="link__icon">
-                                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                                        </span>
+                                <div class="news__title">
+                                    <a href="#">Студенты из Узбекистана смогут вернуться в Россию для очного обучения
                                     </a>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="section__slider">
-                            <div class="gallery__slider">
-                                <div class="slider__item">
-                                    <div class="slider__img">
-                                        <div class="img__wrap">
-                                            <img src="./images/gallery_1.png" alt="gallery_1">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider__item">
-                                    <div class="slider__img">
-                                        <div class="img__wrap">
-                                            <img src="./images/gallery_2.png" alt="gallery_2">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider__item">
-                                    <div class="slider__img">
-                                        <div class="img__wrap">
-                                            <img src="./images/gallery_3.png" alt="gallery_3">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider__item">
-                                    <div class="slider__img">
-                                        <div class="img__wrap">
-                                            <img src="./images/gallery_2.png" alt="gallery_2">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider__item">
-                                    <div class="slider__img">
-                                        <div class="img__wrap">
-                                            <img src="./images/gallery_3.png" alt="gallery_3">
-                                        </div>
-                                    </div>
+                                <div class="news__desc">
+                                    <p>Открыта продажа на вылеты с 1 до ...</p>
                                 </div>
                             </div>
 
-                            <div class="slider__arrows">
-                                <div class="slider__arrow arrow__prev gallery__slider-arrow__prev ">
-                                    <ion-icon name="chevron-back-outline"></ion-icon>
+                            <div class="news__block">
+                                <div class="news__img">
+                                    <img src="./images/news_3.png" alt="">
                                 </div>
-                                <div class="slider__arrow arrow__next gallery__slider-arrow__next">
-                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                <div class="news__date">
+                                    <p>27.09.2021</p>
                                 </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- GALLERY - SECTION - END -->
-
-            <!-- PARTNERS - SECTION - START -->
-
-            <section class="partners__section section">
-                <div class="container">
-                    <div class="section__body">
-                        <div class="section__slider">
-                            <div class="partners__slider">
-                                <div class="slider__item">
-                                    <div class="item__img">
-                                        <div class="img__wrap">
-                                            <img src="./images/parners_1.png" alt="parners_1">
-                                        </div>
-                                    </div>
+                                <div class="news__title">
+                                    <a href="#">Новые тарифы от UzAirways</a>
                                 </div>
-                                <div class="slider__item">
-                                    <div class="item__img">
-                                        <div class="img__wrap">
-                                            <img src="./images/parners_2.png" alt="parners_2">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider__item">
-                                    <div class="item__img">
-                                        <div class="img__wrap">
-                                            <img src="./images/parners_3.png" alt="parners_3">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider__item">
-                                    <div class="item__img">
-                                        <div class="img__wrap">
-                                            <img src="./images/parners_4.png" alt="parners_4">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider__item">
-                                    <div class="item__img">
-                                        <div class="img__wrap">
-                                            <img src="./images/parners_3.png" alt="parners_3">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider__item">
-                                    <div class="item__img">
-                                        <div class="img__wrap">
-                                            <img src="./images/parners_4.png" alt="parners_4">
-                                        </div>
-                                    </div>
+                                <div class="news__desc">
+                                    <p>Уважаемые пассажиры! Настоящим информируем Вас о вводе безбаг ...</p>
                                 </div>
                             </div>
 
-                            <div class="slider__arrows">
-                                <div class="slider__arrow arrow__prev partners__slider-arrow__prev">
-                                    <ion-icon name="chevron-back-outline"></ion-icon>
+                            <div class="news__block">
+                                <div class="news__img">
+                                    <img src="./images/news_1.png" alt="">
                                 </div>
-
-                                <div class="slider__arrow arrow__next partners__slider-arrow__next">
-                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                <div class="news__date">
+                                    <p>27.09.2021</p>
+                                </div>
+                                <div class="news__title">
+                                    <a href="#">Москва-Узбекистан, сентябрь | Ural Airlines </a>
+                                </div>
+                                <div class="news__desc">
+                                    <p>Открыта продажа на вылеты с 1 до 30 сентября из Москвы в города Узбеки ...</p>
                                 </div>
                             </div>
+
+                            <div class="news__block">
+                                <div class="news__img">
+                                    <img src="./images/news_2.png" alt="">
+                                </div>
+                                <div class="news__date">
+                                    <p>27.09.2021</p>
+                                </div>
+                                <div class="news__title">
+                                    <a href="#">Студенты из Узбекистана смогут вернуться в Россию для очного обучения
+                                    </a>
+                                </div>
+                                <div class="news__desc">
+                                    <p>Открыта продажа на вылеты с 1 до ...</p>
+                                </div>
+                            </div>
+
+                            <div class="news__block">
+                                <div class="news__img">
+                                    <img src="./images/news_3.png" alt="">
+                                </div>
+                                <div class="news__date">
+                                    <p>27.09.2021</p>
+                                </div>
+                                <div class="news__title">
+                                    <a href="#">Новые тарифы от UzAirways</a>
+                                </div>
+                                <div class="news__desc">
+                                    <p>Уважаемые пассажиры! Настоящим информируем Вас о вводе безбаг ...</p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- PARTNERS - SECTION - END -->
-
+            <!-- NEWS - END -->
 
         </main>
 
@@ -539,17 +360,9 @@
         </footer>
 
         <!-- FOOTER - END -->
-
-
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="./js/slick.min.js"></script>
-    <script src="./js/app.js"></script>
 </body>
 
 </html>
