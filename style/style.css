@@ -288,15 +288,17 @@ body {
 
 .header__main .main__content .content__link button {
   background: #121212;
+  border: 1px solid transparent;
   border-radius: 10px;
   padding: 15px 30px;
-  border: none;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 130%;
   color: #fff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   cursor: pointer;
 }
 
@@ -304,6 +306,12 @@ body {
   .header__main .main__content .content__link button {
     font-size: calc( 14px + 4 * ((100vw - 320px) / 900));
   }
+}
+
+.header__main .main__content .content__link button:hover {
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #000;
 }
 
 @media screen and (max-width: 768px) {
@@ -485,6 +493,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -493,6 +504,19 @@ body {
     margin-bottom: 20px;
     height: 220px;
   }
+}
+
+.offer__section .offer__card:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.offer__section .offer__card:hover .card__icon {
+  background-color: #fff;
+}
+
+.offer__section .offer__card:hover .card__icon ion-icon {
+  color: #000;
 }
 
 .offer__section .offer__card .card__img {
@@ -507,6 +531,8 @@ body {
 .offer__section .offer__card .card__img .img__wrap {
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  border-radius: 30px;
 }
 
 .offer__section .offer__card .card__img .img__wrap img {
@@ -515,6 +541,8 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .offer__section .offer__card .card__title h1 {
@@ -554,6 +582,8 @@ body {
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   border-radius: 5px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .offer__section .offer__card .card__icon ion-icon {
@@ -718,6 +748,86 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.form_section .section__form .form__group button:hover {
+  background-color: #fff;
+}
+
+.form_section .section__slider {
+  width: 100%;
+  position: relative;
+}
+
+.form_section .section__slider .partners__slider-other {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.form_section .section__slider .partners__slider-other .img__wrap {
+  width: 100%;
+  height: 250px;
+}
+
+.form_section .section__slider .partners__slider-other img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.form_section .section__slider .partners__slider-other .slider__item {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .form_section .section__slider .slider__arrows {
+    display: none;
+  }
+}
+
+.form_section .section__slider .slider__arrows .slider__arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.form_section .section__slider .slider__arrows .slider__arrow ion-icon {
+  color: #000;
+  font-size: 20px;
+}
+
+.form_section .section__slider .slider__arrows .arrow__prev {
+  left: 100px;
+}
+
+.form_section .section__slider .slider__arrows .arrow__next {
+  right: 100px;
+}
+
+.form_section .section__slider .slick-dots {
+  bottom: 30px;
+}
+
+.form_section .section__slider .slick-dots li button:before {
+  font-size: 25px;
 }
 
 /* FORM - SECTION - END */
@@ -780,6 +890,13 @@ body {
 
 .gallery__section .content__link a ion-icon {
   padding-top: 10px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.gallery__section .content__link a:hover ion-icon {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 
 .gallery__section .section__slider {
@@ -900,20 +1017,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-right: 60px;
-  padding-left: 60px;
-}
-
-@media (max-width: 1220px) {
-  .partners__section .section__body {
-    padding-right: calc( 20px + 40 * ((100vw - 320px) / 900));
-  }
-}
-
-@media (max-width: 1220px) {
-  .partners__section .section__body {
-    padding-left: calc( 20px + 40 * ((100vw - 320px) / 900));
-  }
 }
 
 .partners__section .section__slider {
@@ -922,8 +1025,38 @@ body {
 }
 
 .partners__section .section__slider .partners__slider {
-  width: 65%;
+  width: 90%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.partners__section .section__slider .partners__slider .img__wrap {
+  width: 100%;
+  height: 200px;
+}
+
+.partners__section .section__slider .partners__slider .big__img {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.partners__section .section__slider .partners__slider img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.partners__section .section__slider .partners__slider .slider__item {
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1023,14 +1156,11 @@ body {
 }
 
 .footer .footer__column {
-  width: 100%;
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 769px) {
-  .footer .footer__column {
-    max-width: 300px;
-  }
+.footer .footer__column i-frame {
+  width: 450px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1058,6 +1188,13 @@ body {
         -ms-flex-order: 3;
             order: 3;
   }
+  .footer .footer__column i-frame {
+    width: 100%;
+  }
+}
+
+.footer .footer__column .contacts p {
+  margin-bottom: 5px;
 }
 
 .footer .footer__column .column__title {
@@ -1084,6 +1221,10 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #fff;
+}
+
+.footer .footer__column .footer__nav .nav__link:hover {
+  text-decoration: underline;
 }
 
 .footer .footer__column .address__content .content__item:not(:last-child) {
